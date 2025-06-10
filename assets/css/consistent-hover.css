@@ -1,0 +1,58 @@
+/* Ensure consistent hover behavior for all skill icons */
+
+/* Allow native icon colors to show by default, but without filters/glows */
+body .skill-category .direct-skill-icon i,
+body .skill-category .direct-skill-icon svg,
+body .skill-category .icon-circle i,
+body .skill-category .icon-circle svg,
+body .skill-category .skill-icon i,
+body .skill-category .skill-icon svg,
+body .skill-category .icon-oop,
+body .skill-category .icon-datastructures,
+body .skill-category .icon-mvc,
+body .skill-category .icon-designpatterns,
+body .skill-category .devicon-postgresql-plain,
+body .skill-category .devicon-microsoftsqlserver-plain,
+body .skill-category .devicon-firebase-plain,
+body .icon-python, 
+body .icon-csharp, 
+body .icon-java, 
+body .icon-swift, 
+body .icon-dart, 
+body .icon-sql,
+body .icon-fastapi, 
+body .icon-aspnet, 
+body .icon-spring, 
+body .icon-websocket, 
+body .icon-rest,
+body .icon-gateways, 
+body .icon-thirdparty, 
+body .icon-oop, 
+body .icon-datastructures, 
+body .icon-mvc, 
+body .icon-designpatterns {
+  /* Keep native brand colors */
+  filter: none !important;
+  text-shadow: none !important;
+}
+
+/* Force all icons to have consistent circle background */
+body .skill-category .direct-skill-icon i,
+body .skill-category .direct-skill-icon svg {
+  background-color: #2a2a2a !important; 
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+  position: relative;
+  overflow: visible;
+}
+
+/* Standard hover effect for all icons */
+body .skill-category .direct-skill-icon:hover i,
+body .skill-category .direct-skill-icon:hover svg {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4) !important;
+}

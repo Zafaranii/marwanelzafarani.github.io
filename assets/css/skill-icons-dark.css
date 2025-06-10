@@ -1,0 +1,104 @@
+/* Dark theme icon styling - additions to technical-skills.css */
+
+/* Programming Languages */
+.icon-python { 
+  color: #ffde4c; 
+  filter: drop-shadow(0 0 3px rgba(255, 222, 76, 0.4));
+}
+
+.icon-csharp { 
+  color: #ae5cad; 
+  filter: drop-shadow(0 0 3px rgba(174, 92, 173, 0.4));
+}
+
+.icon-java { 
+  color: #ff9b0e; 
+  filter: drop-shadow(0 0 3px rgba(255, 155, 14, 0.4));
+}
+
+.icon-swift { 
+  color: #ff6148; 
+  filter: drop-shadow(0 0 3px rgba(255, 97, 72, 0.4));
+}
+
+.icon-dart { 
+  color: #0a9dff; 
+  filter: drop-shadow(0 0 3px rgba(10, 157, 255, 0.4));
+}
+
+.icon-sql { 
+  color: #0e87c2; 
+  filter: drop-shadow(0 0 3px rgba(14, 135, 194, 0.4));
+}
+
+/* Web Development */
+.icon-fastapi { 
+  color: #00c7b4; 
+  filter: drop-shadow(0 0 3px rgba(0, 199, 180, 0.4));
+}
+
+.icon-aspnet { 
+  color: #6b42ff; 
+  filter: drop-shadow(0 0 3px rgba(107, 66, 255, 0.4));
+}
+
+.icon-spring { 
+  color: #7dea45; 
+  filter: drop-shadow(0 0 3px rgba(125, 234, 69, 0.4));
+}
+
+.icon-websocket { 
+  color: #5ee2ff; 
+  filter: drop-shadow(0 0 3px rgba(94, 226, 255, 0.4));
+}
+
+.icon-rest { 
+  color: #8ede47; 
+  filter: drop-shadow(0 0 3px rgba(142, 222, 71, 0.4));
+}
+
+/* API Integration */
+.icon-gateways { 
+  color: #ffb342; 
+  filter: drop-shadow(0 0 3px rgba(255, 179, 66, 0.4));
+}
+
+.icon-thirdparty { 
+  color: #96b7c7; 
+  filter: drop-shadow(0 0 3px rgba(150, 183, 199, 0.4));
+}
+
+/* Software Concepts */
+.icon-oop { 
+  color: #ff8c6c; 
+  filter: drop-shadow(0 0 3px rgba(255, 140, 108, 0.4));
+}
+
+.icon-datastructures { 
+  color: #4fe9da; 
+  filter: drop-shadow(0 0 3px rgba(79, 233, 218, 0.4));
+}
+
+.icon-mvc { 
+  color: #91a1ff; 
+  filter: drop-shadow(0 0 3px rgba(145, 161, 255, 0.4));
+}
+
+.icon-designpatterns { 
+  color: #ffea6a; 
+  filter: drop-shadow(0 0 3px rgba(255, 234, 106, 0.4));
+}
+
+/* Adding custom glow effect on hover */
+.icon-circle:hover .icon-python { filter: drop-shadow(0 0 5px rgba(255, 222, 76, 0.7)); }
+.icon-circle:hover .icon-csharp { filter: drop-shadow(0 0 5px rgba(174, 92, 173, 0.7)); }
+.icon-circle:hover .icon-java { filter: drop-shadow(0 0 5px rgba(255, 155, 14, 0.7)); }
+.icon-circle:hover .icon-swift { filter: drop-shadow(0 0 5px rgba(255, 97, 72, 0.7)); }
+.icon-circle:hover .icon-dart { filter: drop-shadow(0 0 5px rgba(10, 157, 255, 0.7)); }
+.icon-circle:hover .icon-sql { filter: drop-shadow(0 0 5px rgba(14, 135, 194, 0.7)); }
+
+/* Skill category highlights */
+.skill-category:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
+}

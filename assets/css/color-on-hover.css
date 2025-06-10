@@ -1,0 +1,191 @@
+/* Ensures all skills show their native color permanently, with glow effects ONLY on hover */
+
+/* Apply transition to all icons by default */
+.icon-circle i,
+.icon-circle svg,
+.direct-skill-icon i,
+.direct-skill-icon svg,
+.skill-icon i,
+.skill-icon svg,
+.skill-category .icon-oop,
+.skill-category .icon-datastructures,
+.skill-category .icon-mvc,
+.skill-category .icon-designpatterns,
+.skill-category .devicon-postgresql-plain,
+.skill-category .devicon-microsoftsqlserver-plain,
+.skill-category .devicon-firebase-plain {
+  transition: all 0.3s ease;
+  filter: none !important; /* Remove any glow effect by default */
+  box-shadow: none !important; /* Remove any shadow by default */
+  /* Allow native colors to show */
+}
+
+/* Make hover styles stronger with !important to ensure they override other styles */
+/* Programming Languages */
+.icon-circle:hover .icon-python,
+.icon-circle:hover .devicon-python-plain,
+.direct-skill-icon:hover .icon-python,
+.direct-skill-icon:hover .devicon-python-plain { 
+  color: #ffde4c !important;
+  filter: drop-shadow(0 0 5px rgba(255, 222, 76, 0.7)) !important;
+}
+
+.icon-circle:hover .icon-csharp,
+.icon-circle:hover .devicon-csharp-plain,
+.direct-skill-icon:hover .icon-csharp,
+.direct-skill-icon:hover .devicon-csharp-plain { 
+  color: #ae5cad !important;
+  filter: drop-shadow(0 0 5px rgba(174, 92, 173, 0.7)) !important;
+}
+
+.icon-circle:hover .icon-java,
+.icon-circle:hover .devicon-java-plain,
+.direct-skill-icon:hover .icon-java,
+.direct-skill-icon:hover .devicon-java-plain { 
+  color: #ff9b0e !important;
+  filter: drop-shadow(0 0 5px rgba(255, 155, 14, 0.7)) !important;
+}
+
+.icon-circle:hover .icon-swift,
+.icon-circle:hover .devicon-swift-plain,
+.direct-skill-icon:hover .icon-swift,
+.direct-skill-icon:hover .devicon-swift-plain { 
+  color: #ff6148 !important;
+  filter: drop-shadow(0 0 5px rgba(255, 97, 72, 0.7)) !important;
+}
+
+.icon-circle:hover .icon-dart,
+.icon-circle:hover .devicon-dart-plain,
+.direct-skill-icon:hover .icon-dart,
+.direct-skill-icon:hover .devicon-dart-plain { 
+  color: #0a9dff !important;
+  filter: drop-shadow(0 0 5px rgba(10, 157, 255, 0.7)) !important;
+}
+
+.icon-circle:hover .icon-sql,
+.icon-circle:hover .devicon-mysql-plain,
+.direct-skill-icon:hover .icon-sql,
+.direct-skill-icon:hover .devicon-mysql-plain { 
+  color: #0e87c2 !important;
+  filter: drop-shadow(0 0 5px rgba(14, 135, 194, 0.7)) !important;
+}
+
+/* Web Development */
+.icon-circle:hover .icon-fastapi,
+.direct-skill-icon:hover .icon-fastapi { 
+  color: #00c7b4 !important;
+  filter: drop-shadow(0 0 5px rgba(0, 199, 180, 0.7)) !important;
+}
+
+.icon-circle:hover .icon-aspnet,
+.direct-skill-icon:hover .icon-aspnet { 
+  color: #6b42ff !important;
+  filter: drop-shadow(0 0 5px rgba(107, 66, 255, 0.7)) !important;
+}
+
+.icon-circle:hover .icon-spring,
+.icon-circle:hover .devicon-spring-plain,
+.direct-skill-icon:hover .icon-spring,
+.direct-skill-icon:hover .devicon-spring-plain { 
+  color: #7dea45 !important;
+  filter: drop-shadow(0 0 5px rgba(125, 234, 69, 0.7)) !important;
+}
+
+.icon-circle:hover .icon-websocket,
+.direct-skill-icon:hover .icon-websocket { 
+  color: #5ee2ff !important;
+  filter: drop-shadow(0 0 5px rgba(94, 226, 255, 0.7)) !important;
+}
+
+.icon-circle:hover .icon-rest,
+.direct-skill-icon:hover .icon-rest { 
+  color: #8ede47 !important;
+  filter: drop-shadow(0 0 5px rgba(142, 222, 71, 0.7)) !important;
+}
+
+/* API Integration */
+.icon-circle:hover .icon-gateways,
+.direct-skill-icon:hover .icon-gateways { 
+  color: #ff8c6c !important;
+  filter: drop-shadow(0 0 5px rgba(255, 140, 108, 0.7)) !important;
+}
+
+.icon-circle:hover .icon-thirdparty,
+.direct-skill-icon:hover .icon-thirdparty { 
+  color: #4fe9da !important;
+  filter: drop-shadow(0 0 5px rgba(79, 233, 218, 0.7)) !important;
+}
+
+/* Software Concepts - with higher specificity to override any other styles */
+body .skill-category .direct-skill-icon:hover .icon-oop,
+.icon-circle:hover .icon-oop { 
+  color: #ff8c6c !important;
+  filter: drop-shadow(0 0 5px rgba(255, 140, 108, 0.7)) !important;
+}
+
+body .skill-category .direct-skill-icon:hover .icon-datastructures,
+.icon-circle:hover .icon-datastructures { 
+  color: #4fe9da !important;
+  filter: drop-shadow(0 0 5px rgba(79, 233, 218, 0.7)) !important;
+}
+
+body .skill-category .direct-skill-icon:hover .icon-mvc,
+.icon-circle:hover .icon-mvc { 
+  color: #91a1ff !important;
+  filter: drop-shadow(0 0 5px rgba(145, 161, 255, 0.7)) !important;
+}
+
+body .skill-category .direct-skill-icon:hover .icon-designpatterns,
+.icon-circle:hover .icon-designpatterns { 
+  color: #ffea6a !important;
+  filter: drop-shadow(0 0 5px rgba(255, 234, 106, 0.7)) !important;
+}
+
+/* Database Icons - with higher specificity to override any other styles */
+body .skill-category .direct-skill-icon:hover .devicon-postgresql-plain,
+.icon-circle:hover .devicon-postgresql-plain { 
+  color: #336791 !important;
+  filter: drop-shadow(0 0 5px rgba(51, 103, 145, 0.7)) !important;
+}
+
+body .skill-category .direct-skill-icon:hover .devicon-microsoftsqlserver-plain,
+.icon-circle:hover .devicon-microsoftsqlserver-plain { 
+  color: #cc2927 !important;
+  filter: drop-shadow(0 0 5px rgba(204, 41, 39, 0.7)) !important;
+}
+
+body .skill-category .direct-skill-icon:hover .devicon-firebase-plain,
+.icon-circle:hover .devicon-firebase-plain { 
+  color: #ffca28 !important;
+  filter: drop-shadow(0 0 5px rgba(255, 202, 40, 0.7)) !important;
+}
+
+/* Enhanced hover effect for all skill icons */
+.icon-circle:hover,
+.direct-skill-icon:hover i,
+.direct-skill-icon:hover svg,
+.skill-icon:hover i,
+.skill-icon:hover svg {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Text effect on hover */
+.icon-circle:hover + span,
+.direct-skill-icon:hover span,
+.skill-icon:hover span {
+  color: var(--orange-yellow-crayola) !important;
+}
+
+/* Remove any potential SVG filters/glows that might be applied by default */
+.direct-skill-icon svg {
+  filter: none !important;
+}
+
+/* Make icons have consistent appearance */
+.skill-category .direct-skill-icon i,
+.skill-category .direct-skill-icon svg {
+  background-color: #2a2a2a !important; 
+  color: #c8c8c8 !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}

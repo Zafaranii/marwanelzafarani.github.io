@@ -1,0 +1,186 @@
+/* Special fixes for SVG icons in Software Concepts and API Integration sections */
+
+/* Ensure all SVG icons are properly sized and positioned */
+body .skill-category .direct-skill-icon svg {
+  width: 60px !important;
+  height: 60px !important;
+  padding: 12px !important;
+  position: relative !important;
+}
+
+/* Ensure all SVG icons are properly colored with native brand colors */
+/* Software Concepts SVGs */
+body .skill-category .direct-skill-icon svg.icon-oop {
+  color: #ff8c6c !important;
+}
+
+body .skill-category .direct-skill-icon svg.icon-datastructures {
+  color: #4fe9da !important;
+}
+
+body .skill-category .direct-skill-icon svg.icon-mvc {
+  color: #91a1ff !important;
+}
+
+body .skill-category .direct-skill-icon svg.icon-designpatterns {
+  color: #ffea6a !important;
+}
+
+/* API Integration SVGs */
+body .skill-category .direct-skill-icon svg.icon-gateways {
+  color: #ff8c6c !important;
+}
+
+body .skill-category .direct-skill-icon svg.icon-thirdparty {
+  color: #4fe9da !important;
+}
+
+body .skill-category .direct-skill-icon svg.icon-websocket {
+  color: #5ee2ff !important;
+}
+
+/* Create colored circle effect for SVG icons on hover */
+/* Software Concepts - OOP */
+body .skill-category .direct-skill-icon:has(.icon-oop):hover::before {
+  background-color: rgba(255, 140, 108, 0.15) !important;
+  opacity: 1 !important;
+  box-shadow: 0 0 25px 10px rgba(255, 140, 108, 0.2) !important;
+}
+
+/* Software Concepts - Data Structures */
+body .skill-category .direct-skill-icon:has(.icon-datastructures):hover::before {
+  background-color: rgba(79, 233, 218, 0.15) !important;
+  opacity: 1 !important;
+  box-shadow: 0 0 25px 10px rgba(79, 233, 218, 0.2) !important;
+}
+
+/* Software Concepts - MVC */
+body .skill-category .direct-skill-icon:has(.icon-mvc):hover::before {
+  background-color: rgba(145, 161, 255, 0.15) !important;
+  opacity: 1 !important;
+  box-shadow: 0 0 25px 10px rgba(145, 161, 255, 0.2) !important;
+}
+
+/* Software Concepts - Design Patterns */
+body .skill-category .direct-skill-icon:has(.icon-designpatterns):hover::before {
+  background-color: rgba(255, 234, 106, 0.15) !important;
+  opacity: 1 !important;
+  box-shadow: 0 0 25px 10px rgba(255, 234, 106, 0.2) !important;
+}
+
+/* API Integration - Gateways */
+body .skill-category .direct-skill-icon:has(.icon-gateways):hover::before {
+  background-color: rgba(255, 140, 108, 0.15) !important;
+  opacity: 1 !important;
+  box-shadow: 0 0 25px 10px rgba(255, 140, 108, 0.2) !important;
+}
+
+/* API Integration - Third Party */
+body .skill-category .direct-skill-icon:has(.icon-thirdparty):hover::before {
+  background-color: rgba(79, 233, 218, 0.15) !important;
+  opacity: 1 !important;
+  box-shadow: 0 0 25px 10px rgba(79, 233, 218, 0.2) !important;
+}
+
+/* API Integration - WebSocket */
+body .skill-category .direct-skill-icon:has(.icon-websocket):hover::before {
+  background-color: rgba(94, 226, 255, 0.15) !important;
+  opacity: 1 !important;
+  box-shadow: 0 0 25px 10px rgba(94, 226, 255, 0.2) !important;
+}
+
+/* Enhance the SVG icon hover animation */
+body .skill-category .direct-skill-icon:hover svg {
+  transform: scale(1.1) !important;
+  filter: brightness(1.2) saturate(1.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+body .skill-category .direct-skill-icon svg.icon-datastructures {
+  color: #4fe9da !important;
+}
+
+body .skill-category .direct-skill-icon svg.icon-mvc {
+  color: #91a1ff !important;
+}
+
+body .skill-category .direct-skill-icon svg.icon-designpatterns {
+  color: #ffea6a !important;
+}
+
+body .skill-category .direct-skill-icon svg.icon-gateways {
+  color: #ff8c6c !important;
+}
+
+body .skill-category .direct-skill-icon svg.icon-thirdparty {
+  color: #4fe9da !important;
+}
+
+/* Special hover handling for SVG icons */
+body .skill-category .direct-skill-icon:hover svg.icon-oop {
+  filter: drop-shadow(0 0 6px rgba(255, 140, 108, 0.7)) !important;
+}
+
+body .skill-category .direct-skill-icon:hover svg.icon-datastructures {
+  filter: drop-shadow(0 0 6px rgba(79, 233, 218, 0.7)) !important;
+}
+
+body .skill-category .direct-skill-icon:hover svg.icon-mvc {
+  filter: drop-shadow(0 0 6px rgba(145, 161, 255, 0.7)) !important;
+}
+
+body .skill-category .direct-skill-icon:hover svg.icon-designpatterns {
+  filter: drop-shadow(0 0 6px rgba(255, 234, 106, 0.7)) !important;
+}
+
+body .skill-category .direct-skill-icon:hover svg.icon-gateways {
+  filter: drop-shadow(0 0 6px rgba(255, 140, 108, 0.7)) !important;
+}
+
+body .skill-category .direct-skill-icon:hover svg.icon-thirdparty {
+  filter: drop-shadow(0 0 6px rgba(79, 233, 218, 0.7)) !important;
+}
+
+/* Create colored circle effect for SVG icons on hover */
+body .skill-category .direct-skill-icon:has(.icon-oop):hover::before {
+  background-color: rgba(255, 140, 108, 0.15);
+  opacity: 1;
+  box-shadow: 0 0 25px 10px rgba(255, 140, 108, 0.2);
+}
+
+body .skill-category .direct-skill-icon:has(.icon-datastructures):hover::before {
+  background-color: rgba(79, 233, 218, 0.15);
+  opacity: 1;
+  box-shadow: 0 0 25px 10px rgba(79, 233, 218, 0.2);
+}
+
+body .skill-category .direct-skill-icon:has(.icon-mvc):hover::before {
+  background-color: rgba(145, 161, 255, 0.15);
+  opacity: 1;
+  box-shadow: 0 0 25px 10px rgba(145, 161, 255, 0.2);
+}
+
+body .skill-category .direct-skill-icon:has(.icon-designpatterns):hover::before {
+  background-color: rgba(255, 234, 106, 0.15);
+  opacity: 1;
+  box-shadow: 0 0 25px 10px rgba(255, 234, 106, 0.2);
+}
+
+body .skill-category .direct-skill-icon:has(.icon-gateways):hover::before {
+  background-color: rgba(255, 140, 108, 0.15);
+  opacity: 1;
+  box-shadow: 0 0 25px 10px rgba(255, 140, 108, 0.2);
+}
+
+body .skill-category .direct-skill-icon:has(.icon-thirdparty):hover::before {
+  background-color: rgba(79, 233, 218, 0.15);
+  opacity: 1;
+  box-shadow: 0 0 25px 10px rgba(79, 233, 218, 0.2);
+}
+
+/* Make sure the SVG icons have the right size */
+body .skill-category .direct-skill-icon svg {
+  width: 32px !important;
+  height: 32px !important;
+  padding: 12px !important;
+}

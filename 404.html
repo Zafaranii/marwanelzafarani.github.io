@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Marwan Elzafarani</title>
+  <link rel="shortcut icon" href="./assets/images/marwan_logo_watermark_white.png" type="image/png">
+  <meta http-equiv="refresh" content="3; URL=/about/">
+  <!-- Meta for SEO -->
+  <meta name="description" content="Page not found - redirecting to Marwan Elzafarani's portfolio">
+  <meta name="keywords" content="portfolio, developer, web development">
+  <meta name="author" content="Marwan Elzafarani">
+  <!-- GitHub Pages SPA handling -->
+  <script>
+    // Check if URL contains a section that might be a clean URL attempt
+    var pathSegments = window.location.pathname.split('/');
+    var lastSegment = pathSegments[pathSegments.length - 2]; // Get the second-to-last segment
+    
+    // If lastSegment is any of our valid sections, redirect to the clean URL version
+    if (['about', 'bio', 'cv', 'projects', 'blog', 'contact'].includes(lastSegment)) {
+      window.location.href = '/' + lastSegment + '/';
+    } else {
+      // Default fallback to main page
+      window.location.href = '/about/';
+    }
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: hsl(240, 2%, 13%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .container {
+      max-width: 500px;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: hsl(45, 100%, 72%);
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      opacity: 0.8;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: hsl(45, 100%, 72%);
+      color: hsl(240, 2%, 13%);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background-color: hsl(45, 100%, 65%);
+      transform: translateY(-2px);
+    }
+    .loader {
+      border: 3px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      border-top: 3px solid hsl(45, 100%, 72%);
+      width: 30px;
+      height: 30px;
+      animation: spin 1s linear infinite;
+      margin: 2rem auto 1rem;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .redirect-info {
+      font-size: 0.9rem;
+      opacity: 0.7;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+    <p>
+      Oops! The page you're looking for doesn't exist. 
+      Don't worry, you'll be redirected to my portfolio in a moment.
+    </p>
+    <a href="/about/" class="btn">Go to Portfolio</a>
+    <div class="loader"></div>
+    <div class="redirect-info">
+      Redirecting automatically in 3 seconds...
+    </div>
+  </div>
+</body>
+</html>

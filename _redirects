@@ -1,0 +1,21 @@
+# Redirect root to /about/
+/ /about/ 301
+
+# Redirects for clean URLs
+/about  /about/  301
+/bio    /bio/    301
+/cv     /cv/     301
+/projects /projects/ 301
+/blog   /blog/   301
+/contact /contact/ 301
+
+# Legacy HTML redirects 
+/about.html  /about/  301
+/bio.html    /bio/    301
+/cv.html     /cv/     301
+/projects.html /projects/ 301
+/blog.html   /blog/   301
+/contact.html /contact/ 301
+
+# Fallback for all other routes
+/* /index.html 200

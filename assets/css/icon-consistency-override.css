@@ -1,0 +1,68 @@
+/* Icon consistency override - native colors and double-circle hover effect */
+
+/* Ensure all icons use their native colors without any overriding */
+body .skill-category .direct-skill-icon i, 
+body .skill-category .direct-skill-icon svg,
+body .skill-category .icon-circle i,
+body .skill-category .icon-circle svg,
+body .direct-skill-icon i, 
+body .direct-skill-icon svg,
+body .icon-circle i,
+body .icon-circle svg {
+  color: inherit !important; /* Use the inherited color which should be the brand color */
+  filter: none !important; /* Remove any filters that might be grayscaling the icons */
+  transition: all 0.3s ease !important;
+}
+
+/* Enforce consistent styling for the double-circle effect on hover */
+body .skill-category .direct-skill-icon:hover i::after,
+body .skill-category .direct-skill-icon:hover svg::after,
+body .direct-skill-icon:hover i::after,
+body .direct-skill-icon:hover svg::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 140% !important;
+  height: 140% !important;
+  transform: translate(-50%, -50%) !important;
+  border-radius: 50% !important;
+  z-index: -1 !important;
+  opacity: 0.7 !important;
+  animation: pulse 1.5s infinite !important;
+  pointer-events: none !important;
+}
+
+/* Make sure database icons match the software concepts icons in behavior */
+body .skill-category:nth-of-type(4) .direct-skill-icon i,
+body .skill-category:nth-of-type(4) .direct-skill-icon svg {
+  filter: none !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+body .skill-category:nth-of-type(4) .direct-skill-icon:hover i,
+body .skill-category:nth-of-type(4) .direct-skill-icon:hover svg {
+  transform: scale(1.1) !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Ensure consistent behavior for Software Concepts and API Integration sections */
+body .skill-category:nth-of-type(3) .direct-skill-icon i,
+body .skill-category:nth-of-type(3) .direct-skill-icon svg,
+body .skill-category:nth-of-type(5) .direct-skill-icon i,
+body .skill-category:nth-of-type(5) .direct-skill-icon svg {
+  position: relative !important;
+  overflow: visible !important;
+  filter: none !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+body .skill-category:nth-of-type(3) .direct-skill-icon:hover i,
+body .skill-category:nth-of-type(3) .direct-skill-icon:hover svg,
+body .skill-category:nth-of-type(5) .direct-skill-icon:hover i,
+body .skill-category:nth-of-type(5) .direct-skill-icon:hover svg {
+  transform: scale(1.1) !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4) !important;
+}

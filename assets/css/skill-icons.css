@@ -1,0 +1,57 @@
+/* Additional skill icons styling */
+.skill-category {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Category-specific accent borders */
+.programming-languages {
+  border-left: 3px solid #FFD43B;
+}
+
+.web-development {
+  border-left: 3px solid #6DB33F;
+}
+
+.api-integration {
+  border-left: 3px solid #FFA726;
+}
+
+.software-concepts {
+  border-left: 3px solid #7986CB;
+}
+
+.databases {
+  border-left: 3px solid #00618A;
+}
+
+/* Custom icon background colors for better contrast */
+.icon-circle {
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.icon-python + .icon-circle::before { background-color: rgba(255, 212, 59, 0.1); }
+.icon-csharp + .icon-circle::before { background-color: rgba(155, 79, 151, 0.1); }
+.icon-java + .icon-circle::before { background-color: rgba(237, 139, 0, 0.1); }
+
+.icon-circle:hover::before {
+  opacity: 1;
+}

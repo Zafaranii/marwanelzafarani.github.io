@@ -1,0 +1,47 @@
+/* Final size overrides with maximum specificity */
+
+/* Ensure icons are always the correct size regardless of other CSS rules */
+body .skill-category .direct-skill-icon i,
+body .skill-category .direct-skill-icon svg,
+body .skill-category .header-concepts + h4 + .skill-icons-container .direct-skill-icon i,
+body .skill-category .header-concepts + h4 + .skill-icons-container .direct-skill-icon svg,
+body .skill-category .header-api + h4 + .skill-icons-container .direct-skill-icon i,
+body .skill-category .header-api + h4 + .skill-icons-container .direct-skill-icon svg {
+  width: 60px !important;
+  height: 60px !important;
+  font-size: 28px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Ensure proper container sizing */
+body .skill-category .direct-skill-icon {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+/* Make the hover glow effect size match the larger icons */
+body .skill-category .direct-skill-icon:hover::before {
+  width: 80px !important;
+  height: 80px !important;
+}
+
+/* Adjust text spacing for better layout */
+body .skill-category .direct-skill-icon span {
+  margin-top: 12px !important;
+  font-size: 13px !important;
+}
+
+/* Fix the container gap for better spacing with larger icons */
+body .skill-category .skill-icons-container {
+  gap: 5px !important;
+  padding: 20px 0 !important;
+}
+
+/* Ensure SVG padding is appropriate for the size */
+body .skill-category .direct-skill-icon svg,
+body .skill-category .header-concepts + h4 + .skill-icons-container .direct-skill-icon svg,
+body .skill-category .header-api + h4 + .skill-icons-container .direct-skill-icon svg {
+  padding: 12px !important;
+}

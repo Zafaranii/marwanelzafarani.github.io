@@ -1,0 +1,172 @@
+/* Native colors with double-circle hover effect - HIGHEST PRIORITY */
+
+/* All skill icons have native colors by default */
+body .skill-category .direct-skill-icon i,
+body .skill-category .direct-skill-icon svg,
+body .direct-skill-icon i,
+body .direct-skill-icon svg {
+  position: relative !important;
+  overflow: visible !important;
+  background-color: #2a2a2a !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+  z-index: 1 !important;
+}
+
+/* Create the double-circle effect on hover using pseudo-elements */
+body .skill-category .direct-skill-icon:hover i::after,
+body .skill-category .direct-skill-icon:hover svg::after,
+.direct-skill-icon:hover i::after,
+.direct-skill-icon:hover svg::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 140%;
+  height: 140%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.7;
+  animation: pulse 1.5s infinite;
+  pointer-events: none;
+}
+
+/* Create a special wrapper for SVG icons to handle hover effect correctly */
+body .skill-category .direct-skill-icon {
+  position: relative !important;
+}
+
+/* Create pseudo element for the direct-skill-icon container when it contains SVG */
+body .skill-category .direct-skill-icon:hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Define different colored outer circles for each technology */
+/* Programming Languages */
+.direct-skill-icon:hover .devicon-python-plain::after,
+.direct-skill-icon:hover .icon-python::after {
+  box-shadow: 0 0 15px 5px rgba(255, 222, 76, 0.7);
+}
+
+.direct-skill-icon:hover .devicon-csharp-plain::after,
+.direct-skill-icon:hover .icon-csharp::after {
+  box-shadow: 0 0 15px 5px rgba(174, 92, 173, 0.7);
+}
+
+.direct-skill-icon:hover .devicon-java-plain::after,
+.direct-skill-icon:hover .icon-java::after {
+  box-shadow: 0 0 15px 5px rgba(255, 155, 14, 0.7);
+}
+
+.direct-skill-icon:hover .devicon-swift-plain::after,
+.direct-skill-icon:hover .icon-swift::after {
+  box-shadow: 0 0 15px 5px rgba(255, 97, 72, 0.7);
+}
+
+.direct-skill-icon:hover .devicon-dart-plain::after,
+.direct-skill-icon:hover .icon-dart::after {
+  box-shadow: 0 0 15px 5px rgba(10, 157, 255, 0.7);
+}
+
+.direct-skill-icon:hover .devicon-mysql-plain::after,
+.direct-skill-icon:hover .icon-sql::after {
+  box-shadow: 0 0 15px 5px rgba(14, 135, 194, 0.7);
+}
+
+/* Web Development */
+.direct-skill-icon:hover .icon-fastapi::after {
+  box-shadow: 0 0 15px 5px rgba(0, 199, 180, 0.7);
+}
+
+.direct-skill-icon:hover .icon-aspnet::after {
+  box-shadow: 0 0 15px 5px rgba(107, 66, 255, 0.7);
+}
+
+.direct-skill-icon:hover .icon-spring::after,
+.direct-skill-icon:hover .devicon-spring-plain::after {
+  box-shadow: 0 0 15px 5px rgba(125, 234, 69, 0.7);
+}
+
+.direct-skill-icon:hover .icon-websocket::after {
+  box-shadow: 0 0 15px 5px rgba(94, 226, 255, 0.7);
+}
+
+.direct-skill-icon:hover .icon-rest::after {
+  box-shadow: 0 0 15px 5px rgba(142, 222, 71, 0.7);
+}
+
+/* API Integration */
+.direct-skill-icon:hover .icon-gateways::after {
+  box-shadow: 0 0 15px 5px rgba(255, 140, 108, 0.7);
+}
+
+.direct-skill-icon:hover .icon-thirdparty::after {
+  box-shadow: 0 0 15px 5px rgba(79, 233, 218, 0.7);
+}
+
+/* Software Concepts */
+.direct-skill-icon:hover .icon-oop::after {
+  box-shadow: 0 0 15px 5px rgba(255, 140, 108, 0.7);
+}
+
+.direct-skill-icon:hover .icon-datastructures::after {
+  box-shadow: 0 0 15px 5px rgba(79, 233, 218, 0.7);
+}
+
+.direct-skill-icon:hover .icon-mvc::after {
+  box-shadow: 0 0 15px 5px rgba(145, 161, 255, 0.7);
+}
+
+.direct-skill-icon:hover .icon-designpatterns::after {
+  box-shadow: 0 0 15px 5px rgba(255, 234, 106, 0.7);
+}
+
+/* Database Icons */
+.direct-skill-icon:hover .devicon-postgresql-plain::after {
+  box-shadow: 0 0 15px 5px rgba(51, 103, 145, 0.7);
+}
+
+.direct-skill-icon:hover .devicon-microsoftsqlserver-plain::after {
+  box-shadow: 0 0 15px 5px rgba(204, 41, 39, 0.7);
+}
+
+.direct-skill-icon:hover .devicon-firebase-plain::after {
+  box-shadow: 0 0 15px 5px rgba(255, 202, 40, 0.7);
+}
+
+/* Pulse animation for the double-circle effect */
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+}
+
+/* Add brightness/saturation boost on hover */
+.direct-skill-icon:hover i,
+.direct-skill-icon:hover svg {
+  filter: brightness(1.2) saturate(1.2) !important;
+  transform: scale(1.1);
+}

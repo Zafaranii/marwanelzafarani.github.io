@@ -1,0 +1,277 @@
+/* Dark theme with exact matching of the screenshot */
+
+/* Overall container styling to match the dark theme in screenshot */
+.skill-category {
+  background-color: #1e1e1e !important;
+  border: 1px solid #333 !important;
+  padding: 25px !important;
+}
+
+/* Header styling with correct icon */
+.skill-category-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.skill-category-header .header-icon,
+.skill-category-header div {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.skill-category-header i, 
+.skill-category-header ion-icon {
+  font-size: 22px;
+  color: var(--orange-yellow-crayola);
+}
+
+.skill-category-header h4 {
+  color: #fff;
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Icons container */
+.skill-icons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Individual icon styling to exactly match screenshot */
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #2a2a2a !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 8px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
+.skill-icon span {
+  color: #bbb;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+/* Programming Languages colors that exactly match */
+.icon-python { color: #ffde4c !important; }
+.icon-csharp { color: #ae5cad !important; }
+.icon-java { color: #ff9b0e !important; }
+.icon-swift { color: #ff6148 !important; }
+.icon-dart { color: #0a9dff !important; }
+.icon-sql { color: #0e87c2 !important; }
+
+/* Web Development colors */
+.icon-fastapi { color: #00c7b4 !important; }
+.icon-aspnet { color: #6b42ff !important; }
+.icon-spring { color: #7dea45 !important; }
+.icon-websocket { color: #5ee2ff !important; }
+.icon-rest { color: #8ede47 !important; }
+
+/* Software Concepts colors */
+.icon-oop { color: #ff8c6c !important; }
+.icon-datastructures { color: #4fe9da !important; }
+.icon-mvc { color: #91a1ff !important; }
+.icon-designpatterns { color: #ffea6a !important; }
+
+/* Hover effects that match the shadowing in screenshot */
+.skill-category:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+}
+
+.icon-circle:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Force overrides to match screenshot exactly */
+.skill-icon i, 
+.skill-icon svg {
+  font-size: 28px !important;
+  width: 28px !important;
+  height: 28px !important;
+  color: inherit !important;
+}
+
+.skill-category {
+  margin-bottom: 25px !important;
+  background-color: #1e1e1e !important;
+}
+
+.skill-category-header h4 {
+  color: #ffffff !important;
+  font-weight: normal !important;
+}
+
+/* Grid layout that matches the screenshot */
+.skill-icons-container {
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)) !important;
+  gap: 20px !important;
+}
+
+/* Ensure proper sizing and spacing */
+.icon-circle {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+/* Dark theme header icons */
+
+/* Software concepts specific styling */
+.skill-category:nth-of-type(4) .icon-circle {
+  background-color: #2a2a2a !important;
+}
+
+/* Ensure all text is properly colored */
+.skill-icon span {
+  color: #bbb !important;
+  font-size: 13px !important;
+}
+
+/* Current Project section styling */
+.current-project {
+  margin-bottom: 20px;
+}
+
+.current-project .service-item {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+}
+
+.current-project .service-item::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.current-project .service-icon-box {
+  background-color: #333;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+/* Project technology tags */
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.tech-tag {
+  background-color: var(--onyx);
+  color: var(--orange-yellow-crayola);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+}
+
+/* Project links styling */
+.project-links {
+  margin-top: 15px;
+}
+
+.project-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  transition: color 0.25s ease;
+}
+
+.project-github-link:hover {
+  color: var(--orange-yellow-crayola);
+}
+
+.project-github-link ion-icon {
+  font-size: 18px;
+}
+
+/* Form success and error messages */
+.form-success-message,
+.form-error-message {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  animation: fadeIn 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+
+.form-success-message {
+  background-color: rgba(46, 125, 50, 0.2);
+  border: 1px solid #2e7d32;
+  color: #81c784;
+}
+
+.form-error-message {
+  background-color: rgba(198, 40, 40, 0.2);
+  border: 1px solid #c62828;
+  color: #e57373;
+}
+
+.success-icon ion-icon,
+.error-icon ion-icon {
+  font-size: 24px;
+}
+
+.success-icon ion-icon {
+  color: #4caf50;
+}
+
+.error-icon ion-icon {
+  color: #f44336;
+}
+
+.form-success-message.hide,
+.form-error-message.hide {
+  opacity: 0;
+}
+
+.form-btn.submitting {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

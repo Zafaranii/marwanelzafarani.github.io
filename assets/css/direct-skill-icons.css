@@ -1,0 +1,191 @@
+/* Remove the double circle effect by making the skill-icon itself circular */
+
+/* Direct styling for the skill-icon without nested icon-circle */
+.direct-skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 80px;
+  margin: 10px;
+}
+
+.direct-skill-icon:hover {
+  transform: translateY(-5px);
+}
+
+/* Enhanced hover effect for icons */
+.direct-skill-icon:hover i,
+.direct-skill-icon:hover svg {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4) !important;
+  transition: all 0.3s ease;
+}
+
+/* Make the skill icon itself a circle */
+.direct-skill-icon i,
+.direct-skill-icon svg {
+  width: 60px;
+  height: 60px;
+  background-color: #2a2a2a !important; /* Darker background for icons */
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 8px !important;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+  font-size: 28px;
+  /* Allow native colors to show by default */
+}
+
+/* Style the span below the icon */
+.direct-skill-icon span {
+  font-size: var(--fs-6);
+  color: var(--light-gray);
+  margin-top: 10px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+/* Brand colors always visible */
+/* Programming Languages */
+.direct-skill-icon .devicon-python-plain,
+.direct-skill-icon .icon-python {
+  color: #ffde4c !important;
+}
+
+.direct-skill-icon .devicon-csharp-plain,
+.direct-skill-icon .icon-csharp {
+  color: #ae5cad !important;
+}
+
+.direct-skill-icon .devicon-java-plain,
+.direct-skill-icon .icon-java {
+  color: #ff9b0e !important;
+}
+
+.direct-skill-icon .devicon-swift-plain,
+.direct-skill-icon .icon-swift {
+  color: #ff6148 !important;
+}
+
+.direct-skill-icon .devicon-dart-plain,
+.direct-skill-icon .icon-dart {
+  color: #0a9dff !important;
+}
+
+.direct-skill-icon .devicon-mysql-plain,
+.direct-skill-icon .icon-sql {
+  color: #0e87c2 !important;
+}
+
+/* Web Development */
+.direct-skill-icon .icon-fastapi {
+  color: #00c7b4 !important;
+}
+
+.direct-skill-icon .icon-aspnet {
+  color: #6b42ff !important;
+}
+
+.direct-skill-icon .icon-spring {
+  color: #7dea45 !important;
+}
+
+.direct-skill-icon .icon-websocket {
+  color: #5ee2ff !important;
+}
+
+.direct-skill-icon .icon-rest {
+  color: #8ede47 !important;
+}
+
+/* API Integration */
+.direct-skill-icon .icon-gateways {
+  color: #ff8c6c !important;
+}
+
+.direct-skill-icon .icon-thirdparty {
+  color: #4fe9da !important;
+}
+
+/* Software Concepts */
+.direct-skill-icon .icon-oop {
+  color: #ff8c6c !important;
+}
+
+.direct-skill-icon .icon-datastructures {
+  color: #4fe9da !important;
+}
+
+/* Database Icons */
+.direct-skill-icon .devicon-postgresql-plain {
+  color: #336791 !important;
+}
+
+.direct-skill-icon .devicon-microsoftsqlserver-plain {
+  color: #cc2927 !important;
+}
+
+.direct-skill-icon .devicon-firebase-plain {
+  color: #ffca28 !important;
+}
+
+/* Basic hover effects - double circle effect will be added via native-color-hover-effect.css */
+.direct-skill-icon:hover .devicon-python-plain,
+.direct-skill-icon:hover .icon-python { 
+  filter: brightness(1.2);
+}
+
+.direct-skill-icon:hover .devicon-csharp-plain,
+.direct-skill-icon:hover .icon-csharp { 
+  filter: brightness(1.2);
+}
+
+.direct-skill-icon:hover .devicon-java-plain,
+.direct-skill-icon:hover .icon-java { 
+  filter: brightness(1.2);
+}
+
+.direct-skill-icon:hover .devicon-swift-plain,
+.direct-skill-icon:hover .icon-swift { 
+  filter: brightness(1.2);
+}
+
+.direct-skill-icon:hover .devicon-dart-plain,
+.direct-skill-icon:hover .icon-dart { 
+  filter: brightness(1.2);
+}
+
+.direct-skill-icon:hover .devicon-mysql-plain,
+.direct-skill-icon:hover .icon-sql { 
+  filter: brightness(1.2);
+}
+
+.direct-skill-icon:hover .devicon-postgresql-plain { 
+  filter: brightness(1.2);
+}
+
+.direct-skill-icon:hover .devicon-microsoftsqlserver-plain { 
+  filter: brightness(1.2);
+}
+
+.direct-skill-icon:hover .devicon-firebase-plain { 
+  filter: brightness(1.2);
+}
+
+.direct-skill-icon:hover .icon-mvc {
+  color: #91a1ff !important;
+}
+
+.direct-skill-icon:hover .icon-designpatterns {
+  color: #ffea6a !important;
+}
+
+/* Enhanced hover effects - combined with the other hover effect */
+
+.direct-skill-icon:hover span {
+  color: var(--orange-yellow-crayola);
+}

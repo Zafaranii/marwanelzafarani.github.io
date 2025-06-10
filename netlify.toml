@@ -1,0 +1,68 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/about.html"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/bio.html"
+  to = "/bio/"
+  status = 301
+
+[[redirects]]
+  from = "/cv.html"
+  to = "/cv/"
+  status = 301
+
+[[redirects]]
+  from = "/projects.html"
+  to = "/projects/"
+  status = 301
+
+[[redirects]]
+  from = "/blog.html"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/contact.html"
+  to = "/contact/"
+  status = 301
+
+# Clean URL support - serve index.html from subdirectories
+[[redirects]]
+  from = "/about"
+  to = "/about/"
+  status = 301
+
+[[redirects]]
+  from = "/bio"
+  to = "/bio/"
+  status = 301
+
+[[redirects]]
+  from = "/cv"
+  to = "/cv/"
+  status = 301
+
+[[redirects]]
+  from = "/projects"
+  to = "/projects/"
+  status = 301
+
+[[redirects]]
+  from = "/blog"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact/"
+  status = 301

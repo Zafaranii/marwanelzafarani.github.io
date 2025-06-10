@@ -1,0 +1,220 @@
+/* Final fixes for icon consistency - HIGHEST PRIORITY OVERRIDES */
+
+/* Ensure all icons have their native brand colors and proper double-circle effect */
+
+/* First, reset any gray colors that might be applied with high specificity */
+body .skill-category .direct-skill-icon i,
+body .skill-category .direct-skill-icon svg,
+body .skill-category .icon-circle i,
+body .skill-category .icon-circle svg {
+  color: inherit !important;
+  filter: none !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Make sure all specific icon types have their correct native colors with maximum specificity */
+/* Programming Languages */
+body .skill-category .direct-skill-icon .devicon-python-plain, 
+body .skill-category .direct-skill-icon .icon-python { color: #ffde4c !important; }
+body .skill-category .direct-skill-icon .devicon-csharp-plain, 
+body .skill-category .direct-skill-icon .icon-csharp { color: #ae5cad !important; }
+body .skill-category .direct-skill-icon .devicon-java-plain, 
+body .skill-category .direct-skill-icon .icon-java { color: #ff9b0e !important; }
+body .skill-category .direct-skill-icon .devicon-swift-plain, 
+body .skill-category .direct-skill-icon .icon-swift { color: #ff6148 !important; }
+body .skill-category .direct-skill-icon .devicon-dart-plain, 
+body .skill-category .direct-skill-icon .icon-dart { color: #0a9dff !important; }
+body .skill-category .direct-skill-icon .devicon-mysql-plain, 
+body .skill-category .direct-skill-icon .icon-sql { color: #0e87c2 !important; }
+
+/* Web Development */
+body .skill-category .direct-skill-icon .icon-fastapi { color: #00c7b4 !important; }
+body .skill-category .direct-skill-icon .icon-aspnet { color: #6b42ff !important; }
+body .skill-category .direct-skill-icon .icon-spring, 
+body .skill-category .direct-skill-icon .devicon-spring-plain { color: #7dea45 !important; }
+body .skill-category .direct-skill-icon .icon-websocket { color: #5ee2ff !important; }
+body .skill-category .direct-skill-icon .icon-rest { color: #8ede47 !important; }
+
+/* API Integration */
+body .skill-category .direct-skill-icon .icon-gateways { color: #ff8c6c !important; }
+body .skill-category .direct-skill-icon .icon-thirdparty { color: #4fe9da !important; }
+
+/* Software Concepts */
+body .skill-category .direct-skill-icon .icon-oop { color: #ff8c6c !important; }
+body .skill-category .direct-skill-icon .icon-datastructures { color: #4fe9da !important; }
+body .skill-category .direct-skill-icon .icon-mvc { color: #91a1ff !important; }
+body .skill-category .direct-skill-icon .icon-designpatterns { color: #ffea6a !important; }
+
+/* Database Icons */
+body .skill-category .direct-skill-icon .devicon-postgresql-plain { color: #336791 !important; }
+body .skill-category .direct-skill-icon .devicon-microsoftsqlserver-plain { color: #cc2927 !important; }
+body .skill-category .direct-skill-icon .devicon-firebase-plain { color: #ffca28 !important; }
+
+/* Apply proper glow effects on hover with maximum specificity */
+body .skill-category .direct-skill-icon:hover i,
+body .skill-category .direct-skill-icon:hover svg,
+body .direct-skill-icon:hover i,
+body .direct-skill-icon:hover svg {
+  transform: scale(1.1) !important;
+  transition: transform 0.3s ease !important;
+  filter: brightness(1.2) !important;
+}
+
+/* Fixed double-circle effect with proper animation and opacity */
+body .skill-category .direct-skill-icon i::after,
+body .skill-category .direct-skill-icon svg::after,
+body .direct-skill-icon i::after,
+body .direct-skill-icon svg::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 140% !important;
+  height: 140% !important;
+  transform: translate(-50%, -50%) !important;
+  border-radius: 50% !important;
+  z-index: -1 !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+  pointer-events: none !important;
+}
+
+body .skill-category .direct-skill-icon:hover i::after,
+body .skill-category .direct-skill-icon:hover svg::after,
+body .direct-skill-icon:hover i::after,
+body .direct-skill-icon:hover svg::after {
+  opacity: 0.7 !important;
+  animation: pulseEffect 1.5s infinite !important;
+}
+
+@keyframes pulseEffect {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+}
+
+/* Define glow colors for each technology with maximum specificity */
+body .skill-category .direct-skill-icon .icon-python::after, 
+body .skill-category .direct-skill-icon .devicon-python-plain::after { 
+  box-shadow: 0 0 15px 5px rgba(255, 222, 76, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon .icon-csharp::after, 
+body .skill-category .direct-skill-icon .devicon-csharp-plain::after { 
+  box-shadow: 0 0 15px 5px rgba(174, 92, 173, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon .icon-java::after, 
+body .skill-category .direct-skill-icon .devicon-java-plain::after { 
+  box-shadow: 0 0 15px 5px rgba(255, 155, 14, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon .icon-swift::after, 
+body .skill-category .direct-skill-icon .devicon-swift-plain::after { 
+  box-shadow: 0 0 15px 5px rgba(255, 97, 72, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon .icon-dart::after, 
+body .skill-category .direct-skill-icon .devicon-dart-plain::after { 
+  box-shadow: 0 0 15px 5px rgba(10, 157, 255, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon .icon-sql::after, 
+body .skill-category .direct-skill-icon .devicon-mysql-plain::after { 
+  box-shadow: 0 0 15px 5px rgba(14, 135, 194, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon .icon-oop::after { 
+  box-shadow: 0 0 15px 5px rgba(255, 140, 108, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon .icon-datastructures::after { 
+  box-shadow: 0 0 15px 5px rgba(79, 233, 218, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon .icon-mvc::after { 
+  box-shadow: 0 0 15px 5px rgba(145, 161, 255, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon .icon-designpatterns::after { 
+  box-shadow: 0 0 15px 5px rgba(255, 234, 106, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon .devicon-postgresql-plain::after { 
+  box-shadow: 0 0 15px 5px rgba(51, 103, 145, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon .devicon-microsoftsqlserver-plain::after { 
+  box-shadow: 0 0 15px 5px rgba(204, 41, 39, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon .devicon-firebase-plain::after { 
+  box-shadow: 0 0 15px 5px rgba(255, 202, 40, 0.7) !important; 
+}
+
+/* API Integration glow effects */
+body .skill-category .direct-skill-icon .icon-gateways::after { 
+  box-shadow: 0 0 15px 5px rgba(255, 140, 108, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon .icon-thirdparty::after { 
+  box-shadow: 0 0 15px 5px rgba(79, 233, 218, 0.7) !important; 
+}
+
+/* Make text change color on hover too */
+body .skill-category .direct-skill-icon:hover span {
+  color: var(--orange-yellow-crayola) !important;
+  transition: color 0.3s ease !important;
+}
+
+/* Final overrides for SVG icon consistency */
+body .skill-category .direct-skill-icon svg {
+  width: 60px !important;
+  height: 60px !important;
+  padding: 12px !important;
+  border-radius: 50% !important;
+  background-color: #2a2a2a !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Ensure the hover pseudo-element is consistently applied for all direct-skill-icon elements */
+body .skill-category .direct-skill-icon:hover::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 50% !important;
+  z-index: -1 !important;
+  opacity: 1 !important;
+  transition: opacity 0.3s ease !important;
+}

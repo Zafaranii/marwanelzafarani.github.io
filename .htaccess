@@ -1,0 +1,27 @@
+RewriteEngine On
+
+# Redirect root to /about/
+RewriteRule ^$ /about/ [R=301,L]
+
+# Clean URL rewrites for subdirectories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ /$1/ [R=301,L]
+
+# Serve index.html from subdirectories for clean URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
+RewriteRule ^([^/]+)/?$ /$1/index.html [L]
+
+# Redirect old .html files to clean URLs
+RewriteRule ^about\.html$ /about/ [R=301,L]
+RewriteRule ^bio\.html$ /bio/ [R=301,L]
+RewriteRule ^cv\.html$ /cv/ [R=301,L]
+RewriteRule ^projects\.html$ /projects/ [R=301,L]
+RewriteRule ^blog\.html$ /blog/ [R=301,L]
+RewriteRule ^contact\.html$ /contact/ [R=301,L]
+
+# Force HTTPS (optional, for production)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

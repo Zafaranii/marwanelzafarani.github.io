@@ -1,0 +1,136 @@
+/* Enhanced Technical Skills Section - Direct Native Brand Colors */
+
+/* Remove the double circle effect by styling the skill-icon directly */
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 80px;
+}
+
+/* Apply styling directly to the skill-icon instead of the inner circle */
+.skill-icon {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Style the span element below the icon */
+.skill-icon span {
+  font-size: var(--fs-6);
+  color: var(--light-gray);
+  margin-top: 10px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+/* Direct native brand colors and styling for each technology - applied to icons */
+/* Programming Languages */
+.icon-circle .icon-python {
+  color: #ffde4c !important;
+  font-size: 32px !important;
+}
+
+.icon-circle .icon-csharp {
+  color: #ae5cad !important;
+  font-size: 32px !important;
+}
+
+.icon-circle .icon-java {
+  color: #ff9b0e !important;
+  font-size: 32px !important;
+}
+
+.icon-circle .icon-swift {
+  color: #ff6148 !important;
+  font-size: 32px !important;
+}
+
+.icon-circle .icon-dart {
+  color: #0a9dff !important;
+  font-size: 32px !important;
+}
+
+.icon-circle .icon-sql {
+  color: #0e87c2 !important;
+  font-size: 32px !important;
+}
+
+/* Web Development */
+.icon-circle .icon-fastapi {
+  color: #00c7b4 !important;
+  font-size: 32px !important;
+}
+
+.icon-circle .icon-aspnet {
+  color: #6b42ff !important;
+  font-size: 32px !important;
+}
+
+.icon-circle .icon-spring {
+  color: #7dea45 !important;
+  font-size: 32px !important;
+}
+
+.icon-circle .icon-websocket {
+  color: #5ee2ff !important;
+  font-size: 32px !important;
+}
+
+.icon-circle .icon-rest {
+  color: #8ede47 !important;
+  font-size: 32px !important;
+}
+
+/* API Integration */
+.icon-circle .icon-gateways {
+  color: #ff8c6c !important;
+}
+
+.icon-circle .icon-thirdparty {
+  color: #4fe9da !important;
+}
+
+/* Software Concepts */
+.icon-circle .icon-oop {
+  color: #ff8c6c !important;
+}
+
+.icon-circle .icon-datastructures {
+  color: #4fe9da !important;
+}
+
+.icon-circle .icon-mvc {
+  color: #91a1ff !important;
+}
+
+.icon-circle .icon-designpatterns {
+  color: #ffea6a !important;
+}
+
+/* Databases */
+.icon-circle .devicon-postgresql-plain {
+  color: #336791 !important;
+  font-size: 32px !important;
+}
+
+.icon-circle .devicon-microsoftsqlserver-plain {
+  color: #cc2927 !important;
+  font-size: 32px !important;
+}
+
+.icon-circle .devicon-firebase-plain {
+  color: #ffca28 !important;
+  font-size: 32px !important;
+}
+
+/* Enhanced hover effects */
+.skill-icon:hover .icon-circle {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4) !important;
+}
+
+.skill-icon:hover span {
+  color: var(--orange-yellow-crayola);
+}

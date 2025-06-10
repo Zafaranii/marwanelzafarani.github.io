@@ -1,0 +1,87 @@
+/* Fixed hover effects for Software Concepts and API Integration sections */
+
+/* Ensure Software Concepts and API Integration icons have the ::after pseudo-element positioned properly */
+body .skill-category .direct-skill-icon .icon-oop,
+body .skill-category .direct-skill-icon .icon-datastructures,
+body .skill-category .direct-skill-icon .icon-mvc,
+body .skill-category .direct-skill-icon .icon-designpatterns,
+body .skill-category .direct-skill-icon .icon-gateways,
+body .skill-category .direct-skill-icon .icon-thirdparty {
+  position: relative !important;
+  overflow: visible !important;
+  z-index: 1 !important;
+}
+
+/* Define the ::after pseudo-element for SVG icons that were missing it */
+body .skill-category .direct-skill-icon .icon-oop::after,
+body .skill-category .direct-skill-icon .icon-datastructures::after,
+body .skill-category .direct-skill-icon .icon-mvc::after,
+body .skill-category .direct-skill-icon .icon-designpatterns::after,
+body .skill-category .direct-skill-icon .icon-gateways::after,
+body .skill-category .direct-skill-icon .icon-thirdparty::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 140% !important;
+  height: 140% !important;
+  transform: translate(-50%, -50%) !important;
+  border-radius: 50% !important;
+  z-index: -1 !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+  pointer-events: none !important;
+}
+
+/* Make the glow/halo effect visible on hover */
+body .skill-category .direct-skill-icon:hover .icon-oop::after,
+body .skill-category .direct-skill-icon:hover .icon-datastructures::after,
+body .skill-category .direct-skill-icon:hover .icon-mvc::after,
+body .skill-category .direct-skill-icon:hover .icon-designpatterns::after,
+body .skill-category .direct-skill-icon:hover .icon-gateways::after,
+body .skill-category .direct-skill-icon:hover .icon-thirdparty::after {
+  opacity: 0.7 !important;
+  animation: pulseEffect 1.5s infinite !important;
+}
+
+/* Ensure proper glow colors are applied for Software Concepts */
+body .skill-category .direct-skill-icon:hover .icon-oop::after { 
+  box-shadow: 0 0 15px 5px rgba(255, 140, 108, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon:hover .icon-datastructures::after { 
+  box-shadow: 0 0 15px 5px rgba(79, 233, 218, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon:hover .icon-mvc::after { 
+  box-shadow: 0 0 15px 5px rgba(145, 161, 255, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon:hover .icon-designpatterns::after { 
+  box-shadow: 0 0 15px 5px rgba(255, 234, 106, 0.7) !important; 
+}
+
+/* Ensure proper glow colors are applied for API Integration */
+body .skill-category .direct-skill-icon:hover .icon-gateways::after { 
+  box-shadow: 0 0 15px 5px rgba(255, 140, 108, 0.7) !important; 
+}
+
+body .skill-category .direct-skill-icon:hover .icon-thirdparty::after { 
+  box-shadow: 0 0 15px 5px rgba(79, 233, 218, 0.7) !important; 
+}
+
+/* Ensure the animation keyframes are defined */
+@keyframes pulseEffect {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+}
